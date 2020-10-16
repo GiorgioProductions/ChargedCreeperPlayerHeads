@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ChargedCreeperPlayerHeads:jar">
+    <output-path>$PROJECT_DIR$/../../Minecraft/Server Minecraft/pruebas de plugins/plugins</output-path>
+    <root id="archive" name="ChargedCreeperPlayerHeads.jar">
+      <element id="module-output" name="ChargedCreeperPlayerHeads" />
+      <element id="file-copy" path="$PROJECT_DIR$/plugin.yml" />
+    </root>
+  </artifact>
+</component>
