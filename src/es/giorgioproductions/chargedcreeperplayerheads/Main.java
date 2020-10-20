@@ -7,7 +7,7 @@ public class Main extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        Bukkit.getConsoleSender().sendMessage("§bChargedCreeperPlayerHeads §8was loaded successfully");
+        Bukkit.getConsoleSender().sendMessage("§bChargedCreeperPlayerHeads v1.1 §8was loaded successfully");
         getServer().getPluginManager().registerEvents(new ExplosionListener(), this);
     }
 
