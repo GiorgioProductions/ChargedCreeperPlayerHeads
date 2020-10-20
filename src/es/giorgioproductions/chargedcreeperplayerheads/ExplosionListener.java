@@ -20,7 +20,8 @@ public class ExplosionListener implements Listener {
         if (ent instanceof Player) {
             Player p = (Player) ent;
             if (e.getDamager() instanceof Creeper) {
-                if(p.getHealth() - e.getDamage() <= 0) {
+                ItemStack totem = new ItemStack(Material.TOTEM_OF_UNDYING, 1);
+                if(p.getHealth() - e.getDamage() <= 0 && p.getInventory().getItemInMainHand().getType() != Material.TOTEM_OF_UNDYING && p.getInventory().getItemInOffHand().getType() != Material.TOTEM_OF_UNDYING) {
                     Creeper creeper = (Creeper)e.getDamager();
                     if (creeper.isPowered()) {
                         ItemStack playerhead = new ItemStack(Material.PLAYER_HEAD,1);
